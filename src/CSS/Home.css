@@ -1,0 +1,366 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  overflow-x: hidden;
+  margin: 0;
+  font-family: 'Inter', 'sasn';
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  text-decoration: none;
+}
+
+.homepage-container {
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  overflow-y: auto;
+}
+
+.main-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.section4 {
+  height: 0px;
+}
+
+.section1 {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.section2 {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 62.8%;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.section3 {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+
+.banner {
+  width: 750px;
+  margin-bottom: 20px;
+}
+
+.carousel {
+  position: relative;
+  z-index: 10;
+  height: 435px;
+}
+
+.carousel .carousel-root {
+  position: relative;
+  z-index: 11;
+}
+
+.carousel .carousel-slider {
+  overflow: visible;
+}
+
+.carousel .carousel .control-arrow {
+  z-index: 20;
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+}
+
+.carousel .carousel .control-arrow:hover {
+  opacity: 1;
+}
+
+.carousel .slide {
+  height: 285px;
+}
+
+.carousel .slide img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+  border-radius: 10px;
+}
+
+.carousel .carousel-caption {
+  background: transparent;
+  padding: 10px;
+  border-radius: 5px;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.games, .recommendations {
+  display: flex;
+  gap: 20px;
+  
+}
+
+.game-card, .recommendation-item {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  flex: 1;
+  text-align: center;
+  transition: 0.3s;
+  cursor: pointer;
+  padding: 0px 0px 120px 0px;
+  position: relative;
+  bottom: 30px;
+  text-decoration: none;
+}
+
+.g1 {
+  width: 388px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  flex: 1;
+  text-align: center;
+  transition: 0.3s;
+  cursor: pointer;
+  position: relative;
+  z-index: 10;
+  left: 67.8%;
+  transform: translateY(-504px);
+  padding: 0px 0px 120px 0px;
+  text-decoration: none;
+}
+
+.game-card:hover, .recommendation-item:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  transform: translateY(-5px);
+}
+
+.g1:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  transform: translateY(-509px);
+}
+
+.game-title, .rec-title {
+  font-size: 24px;
+  margin: 0 0 10px 0;
+  color: #333;
+}
+
+.game-image, .rec-image {
+  position: relative;
+  border-radius: 10px 10px 0 0;
+  width: 100%;
+  max-height: 300px;
+  margin-bottom: 10px;
+}
+
+
+.footer {
+  background-color: #004d40;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  margin-top: 40px;
+  text-align: center;
+  color: white;
+  z-index: 55;
+  position: relative;
+  
+
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 40px;
+}
+
+.footer-content > div {
+  flex: 1;
+  min-width: 250px;
+  margin: 10px;
+}
+
+.footer-title {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.footer-description {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.footer-links .footer-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links .footer-list li {
+  margin-bottom: 10px;
+}
+
+.footer-links .footer-list li a {
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.footer-links .footer-list li a:hover {
+  color: lightblue;
+}
+
+.footer-social {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.social-icon {
+  font-size: 24px;
+  color: white;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icon:hover {
+  color: #2575fc;
+  transform: scale(1.1);
+}
+
+.social-iconInsta{
+  font-size: 24px;
+  color: white;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-iconInsta:hover{
+  color: #2575fc;
+  transform: scale(1.1);
+}
+
+.footer-copy {
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+/* Media Queries */
+@media (max-width: 1440px) and (min-width: 768px) { /*Finalizado*/
+
+  .g1{
+    
+    width: 388px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    flex: 1;
+    text-align: center;
+    transition: 0.3s;
+    cursor: pointer;
+    position: relative;
+    z-index: 10;
+    left: 67.8%;
+    transform: translateY(-504px);
+    padding: 0px 0px 120px 0px;
+
+
+  }
+
+  .section2 {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 817px !important;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+
+  .carousel{
+    width: 815px !important;
+    
+    
+  }
+
+  .main-content {
+    max-width: 100%;
+    padding: 0 20px;
+  }
+
+  .section4{
+    max-height: 40% !important;
+    size: 10% !important;
+  }
+
+  .g1 {
+    left: 67.8%;
+    transform: translateY(-504px);
+    width: 416px;
+  }
+}
+
+@media (max-width: 1366px) and (min-width: 768px) {
+
+  .section, .section1, .section3, .section4{
+    width: 80%;
+    align-self: center !important;
+  }
+
+  
+
+  .section2 {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 49.7% !important;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    position: relative;
+    left: 120px;
+  }
+
+  .carousel{
+    width: 100% !important;
+  }
+
+  .main-content {
+    max-width: 100%;
+    padding: 0 20px;
+  }
+
+  .section4{
+    max-height: 40% !important;
+    size: 10% !important;
+  }
+
+  .g1 {
+    left: 67.85%;
+    transform: translateY(-504px);
+    width: 32%;
+  }
+}
+
+@media (max-width: 800px) and (min-width: 600px) {
+
+  .section2 {
+    position: relative;
+    right: 0; /* Definido como 0 para mover o elemento para a esquerda */
+    left: -100px; /* Adicionado para mover a seção para a esquerda de forma mais confiável */
+  }
+
+}
